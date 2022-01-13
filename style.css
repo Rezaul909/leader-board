@@ -138,3 +138,56 @@ hr {
   color: #FF4A60;
   font-size: 20px;
 }
+
+/* --------------------------
+-------media queries 
+-------------------------------*/
+
+/* mobile device  */
+@media only screen and (max-width:688px){
+  .container{
+    width: 100%;
+  }
+  .top-players-title{
+    text-align: center;
+  }
+  .players {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  /* .player{
+    flex-direction: column;
+  } */
+
+  .top-blog-title{
+    text-align: center;
+  }
+  .blogs, .courses{
+    grid-template-columns:repeat(1,1fr);
+    justify-items: center;
+  }
+  
+}
+
+/* tablet device  */
+
+@media only screen and (min-width:688px) and (max-width:992px) {
+  .container{
+    width: 100%;
+  }
+  .top-players-title{
+    text-align: center;
+  }
+  .players{
+    grid-template-columns:repeat(2,1fr);
+    justify-items: center;
+  }
+
+  .top-blog-title{
+    text-align: center;
+  }
+  .blogs, .courses{
+    grid-template-columns:repeat(1,1fr);
+    justify-items: center;
+  }
+}
